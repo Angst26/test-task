@@ -1,0 +1,32 @@
+$input-font-size: 1.35rem;
+
+.dashboardContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.searchPanel{
+  align-self: center;
+  display: flex;
+  height: 40px;
+  font-size: $input-font-size;
+
+  input{
+    width: 200px;
+    font-size: $input-font-size;
+  }
+  button {
+    padding: 5px;
+    font-size: $input-font-size;
+  }
+}
+
+.filterContainer {
+  display: flex;
+  gap: 10px;
+}
+.addEmployee {
+  align-self: start;
+  margin-block: 10px;
+}
+
