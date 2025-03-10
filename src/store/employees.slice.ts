@@ -32,7 +32,6 @@ export const employeesSlice = createSlice({
     initialState,
     reducers: {
         addEmployee: (state, action: PayloadAddEmployee) => {
-            debugger
             if (action.payload.name && action.payload.phone) {
                 state.employees.push(action.payload);
             } else return;

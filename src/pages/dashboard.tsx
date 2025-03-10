@@ -66,7 +66,7 @@ export default function Dashboard() {
 
         {isAddEmployeeForm &&
             <EmployeeCardEditing
-                id={nextId}
+                id={employees.length + 1}
                 name={''}
                 phoneNumber={''}
                 jobTitle={'waiter'}

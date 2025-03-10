@@ -23,7 +23,7 @@ export const EmployeeCardEditing: FC<Props> = ({id, handleDoubleClick, name, pho
     const dispatchSave = useAction(actionCreator)
 
     const handleSave = () => {
-        dispatchSave({id: id, name: editedName, role: editedJobTitle, phone: editedPhoneNumber,})
+        dispatchSave({id: id, name: editedName, isArchive: false, role: editedJobTitle as Role, phone: editedPhoneNumber, birthday: '01-01-1991'})
         if(handleOnClickSave) {
             handleOnClickSave()
         }
