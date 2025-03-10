@@ -1,5 +1,5 @@
 import {employeesSlice, IEmployeeState} from './employees.slice';
-import {  IEmployee } from '../types/employee'; // Adjust the path to where IEmployeeState and IEmployee are defined
+import {  IEmployee } from '../types/employee';
 
 describe('employeesSlice reducers', () => {
     let initialState: IEmployeeState;
